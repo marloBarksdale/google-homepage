@@ -32,11 +32,11 @@
             font-feature-settings: 'liga';
         }
 
-        html{
+        html {
             height: 100%;
         }
 
-        body{
+        body {
             height: 100%;
         }
 
@@ -44,8 +44,8 @@
             display: flex;
             justify-content: flex-end;
             height: 60px;
-            
-          
+
+
 
         }
 
@@ -55,49 +55,64 @@
 
         }
 
+        :any-link:hover {
+            text-decoration: underline;
+        }
+
         .logo {
             display: flex;
             justify-content: center;
         }
 
         .nav-div div {
-           
-            display:flex;
+
+            display: flex;
             padding: 0;
-            
+
             align-self: center;
-            
+
 
         }
 
         .nav-div div a {
-        
-            margin:10px;
+
+            margin: 10px;
             margin-top: 2px;
             font-size: 13px;
             font-family: sans-serif;
-            text-decoration: none;;
-           
-            
-            
+            text-decoration: none;
+            ;
+
+
+
         }
 
 
         main {
-            width:100%;
-            display:flex;
+            width: 100%;
+            display: flex;
             flex-direction: column;
-            
-            
+
+
         }
 
-        main div{
-            width:100%;
+        main div {
+            width: 100%;
             display: flex;
             justify-content: center;
-            
+            padding: 4px;
+
         }
-        
+
+        input[type="text"] {
+            width: 500px;
+            border: none;
+            height: 40px;
+        }
+
+        .searchInput span {
+            padding: 0 8px;
+        }
 
         .img-fluid {
             border-radius: 50%;
@@ -106,13 +121,38 @@
 
         }
 
+        #mic-logo:hover {
+            color: blue;
+        }
 
- 
+        .searchInput:hover {
+            background-color: #fff;
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: rgba(223, 225, 229, 0);
+
+        }
+
+        .searchInput {
+            background: #fff;
+            display: flex;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+            margin: 0 auto;
+            width: fit-content;
+            align-items: center;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
 
 
-        footer{
-            height:60px;
-            
+        footer {
+            height: 60px;
+
         }
     </style>
 
@@ -130,7 +170,7 @@
 
             <div class="div-left">
 
-               
+
                 <a href="">About</a>
                 <a href="">Store</a>
 
@@ -147,17 +187,17 @@
 
 
             <div>
-             <a href="#">
-                <span class=material-icons> apps</span>
-             </a>   
+                <a href="#">
+                    <span class=material-icons> apps</span>
+                </a>
             </div>
 
 
 
             <div>
-               <a href="">
-                <img src="images/profile.png" class="img-fluid">
-               </a> 
+                <a href="">
+                    <img src="images/profile.png" class="img-fluid">
+                </a>
 
             </div>
 
@@ -187,24 +227,28 @@
 
         <div class="searchArea">
 
-            
 
-                
 
-                
 
-                <div class=searchInput>
-                    <span class="material-icons">
-                        search
-                     </span>
-                    <input type="text"/>
-                    
-                    <span class="material-icons">
+
+
+
+            <div class=searchInput>
+                <span class="material-icons">
+                    search
+                </span>
+                <input type="text" />
+                <a href="">
+
+                    <span class="material-icons" id="mic-logo">
+
                         keyboard_voice
-                        </span>
-                </div>
+                    </span>
+                </a>
 
-           
+            </div>
+
+
 
         </div>
 
